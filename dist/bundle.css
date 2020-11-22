@@ -1,0 +1,170 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+#wrapper {
+  position: relative;
+  margin: 0 auto;
+  width: 950px; 
+}
+#wrapper #skup1 {
+  background-color: rgb(221,221,221);
+  width: 315px;
+  margin-right: 20px;
+  float: left;
+  height: 110px;
+  border-radius: 0 0 7px 7px;
+}
+  #wrapper #skup {
+  width: 615px;
+  background-color: rgb(221,221,221);
+  height: 110px;
+  float: left;
+  border-radius: 0 0 7px 7px;
+  display: flex;
+  -webkit-box-pack: center;
+  align-items: center; 
+}
+#wrapper #skup p {
+  color: white;
+  margin-left: 7rem;
+  font-size: 12pt;
+}
+#wrapper #container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#wrapper #container .gallery {
+  float: left;
+  position: absolute;
+  top: 155px;
+  right: 35%;
+  overflow-wrap: normal;
+  width: 65%;
+}
+#wrapper #container .gallery img {
+  height: 200px;
+  float: right;
+  margin: 0 0 10px 10px;
+  border-radius: 2%;
+}
+#wrapper #container .gallery .button {
+  float: right;
+  position: absolute;
+  right: -0.5rem;
+  top: 21rem;
+}
+#wrapper #container .gallery .button .prev {
+  height: 60px;
+  width: 60px;
+  border-radius: 10%;
+  border: 1px solid rgb(221,221,221);
+  padding: 10px;
+  margin: 0 0 10px 10px;
+}
+#wrapper #container .gallery .button .next {
+  height: 60px;
+  width: 60px;
+  border-radius: 10%;
+  border: 1px solid rgb(221,221,221);
+  padding: 10px;
+  margin: 0 0 10px 10px;
+}
+#wrapper #container .gallery .button img {
+  height: auto;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  float: none;
+  margin: 0 auto;
+  padding-top: 25%;
+}
+#wrapper #container .gallery .second {
+  margin-right: 150px;
+}
+#wrapper #container .right {
+  float: right;
+  position: absolute;
+  top: 145px;
+  right: 0;
+  width: 33%;
+}
+#wrapper #container .right h2 {
+  font-family: "Franklin Gothic";
+  margin-top: 15px;
+  color: #144881;
+  font-size: 2.3em;
+  line-height: 30pt;
+}
+#wrapper #container .right p {
+  font-family: "Franklin Gothic";
+  font-size: 11pt;
+  margin-top: -8px;
+  line-height: 20pt;
+}
+#wrapper #footer {
+  font-size: 12pt;
+  background-color: rgb(221,221,221);
+  height: 100px;
+  width: 100%;
+  border-radius: 7px 7px 0 0;
+  position: absolute;
+  bottom: -620px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 8rem;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+#wrapper #footer p {
+  color: white;
+}
+.images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+.overlay {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 0.5rem;
+  bottom: 0rem;
+  left: 1rem;
+  right: 0;
+  opacity: 0;
+  transition: .5s ease;
+}
+.prev:hover .overlay {
+  opacity: 1;
+}
+.overlay2 {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 7.6rem;
+  bottom: 0rem;
+  left: 1rem;
+  opacity: 0;
+  transition: .5s ease;
+}
+.next:hover .overlay2{
+  opacity: 1;
+}
